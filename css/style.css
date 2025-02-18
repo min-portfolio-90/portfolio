@@ -243,7 +243,7 @@ nav ul {
     display: inline-block;
     padding-left: 0;
     list-style: none;
-    padding: 20px;
+    padding: 20px 0;
     margin-bottom: 0;
     -webkit-transition: all .5s;
     transition: all .5s;
@@ -289,8 +289,12 @@ a.active {
 /* home section
 ==================================================*/
 
-video{width: 100%;
+#home video{width: 100%;
 display: block;
+}
+#home img{
+    width: 100%;
+    display: none;
 }
 
 .table-cell {
@@ -375,6 +379,7 @@ display: block;
     width: 80px;
     text-align: center;
 }
+
 
 /* sns section
 ==================================================*/
@@ -604,6 +609,13 @@ display: block;
 }
 
 @media (max-width: 768px) {
+    #home video{
+        display: none;
+        }
+        #home img{
+          
+            display:block;
+        }
     .pd{
         margin-top: 30px;
     }
@@ -635,9 +647,12 @@ display: block;
         left: 2em;
     }
 }
+@media (max-width: 550px) {
+    nav li a{font-size: 12px;}
+}
 
 @media (max-width: 500px) {
-    nav ul {
+    header {
         display: none;
     }
 
